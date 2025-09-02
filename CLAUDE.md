@@ -26,6 +26,7 @@ When choosing between approaches, prioritize:
 - Prefer built-in types (dict, list, tuple) over typing imports
 - Public interfaces require type hints; internals optional when obvious
 - Use dataclasses for value objects
+- Use the standard library and existing utilities first. Add a new external dependency only when it’s the safest, simplest way to deliver real value—and always flag it when you do.
 
 ## Implementation Process
 
