@@ -92,3 +92,4 @@ Maximum 3 attempts per issue, then:
 - Code follows project patterns
 - Commit message explains why, not what
 - No commented-out code
+- Scan for and remove dead code (unused imports, functions, variables)
