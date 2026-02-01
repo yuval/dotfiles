@@ -26,6 +26,7 @@ When choosing between approaches, prioritize:
 - Prefer built-in types (dict, list, tuple) over typing imports
 - Public interfaces require type hints; internals optional when obvious
 - Use dataclasses for value objects
+- Keep imports at the top of files; only use local imports inside functions to break circular dependencies or for optional/heavy modules
 
 ## Implementation Process
 
