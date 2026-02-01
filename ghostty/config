@@ -29,9 +29,11 @@ keybind = page_down=scroll_page_down
 keybind = cmd+k=clear_screen
 
 # Word navigation - send escape sequences to shell
-# Option+Left/Right for word navigation (sends escape sequences)
+# Option+Left/Right and Cmd+Left/Right for word navigation
 keybind = alt+left=text:\x1bb
 keybind = alt+right=text:\x1bf
+keybind = cmd+left=text:\x1bb
+keybind = cmd+right=text:\x1bf
 
 # Line editing - send to shell
 keybind = cmd+backspace=text:\x15
