@@ -1,8 +1,33 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls:*)",
-      "Read(**)"
+      "Read",
+      "Glob",
+      "Grep",
+      "Bash(ls *)",
+      "Bash(pwd)",
+      "Bash(which *)",
+      "Bash(echo *)",
+      "Bash(env)",
+      "Bash(cat *)",
+      "Bash(git *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:stackoverflow.com)",
+      "WebFetch(domain:docs.python.org)",
+      "WebFetch(domain:developer.mozilla.org)",
+      "WebFetch(domain:npmjs.com)",
+      "WebFetch(domain:claude.ai)",
+      "WebFetch(domain:anthropic.com)",
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:platform.claude.com)",
+      "WebFetch(domain:code.claude.com)",
+      "WebFetch(domain:api.anthropic.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:console.anthropic.com)"
     ]
   },
   "statusLine": {
