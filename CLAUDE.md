@@ -25,6 +25,7 @@ iTerm2 is not symlinked — it syncs via its own preferences mechanism. The plis
 | `ghostty/` | `~/.config/ghostty` |
 | `claude/CLAUDE.md` | `~/.claude/CLAUDE.md` |
 | `claude/settings.json` | `~/.claude/settings.json` |
+| `claude/statusline.sh` | `~/.claude/statusline.sh` |
 | `claude/agents/shipit.md` | `~/.claude/agents/shipit.md` |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `vscode/keybindings.json` | `~/Library/Application Support/Code/User/keybindings.json` |
