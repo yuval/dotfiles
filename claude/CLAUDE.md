@@ -93,3 +93,6 @@ Maximum 3 attempts per issue, then:
 - Commit message explains why, not what
 - No commented-out code
 - Scan for and remove dead code (unused imports, functions, variables)
+
+## Common Mistakes to Avoid
+- Don't assume version numbers for new dependencies. If the repo already uses the dependency, reuse the existing version. Otherwise, ask me which version to use.
