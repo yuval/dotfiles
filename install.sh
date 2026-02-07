@@ -41,6 +41,7 @@ link "ghostty" "$HOME/.config/ghostty"
 mkdir -p "$HOME/.claude"
 link "claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 link "claude/settings.json" "$HOME/.claude/settings.json"
+link "claude/agents/shipit.md" "$HOME/.claude/agents/shipit.md"
 
 # VSCode (individual files)
 VSCODE_USER="$HOME/Library/Application Support/Code/User"
