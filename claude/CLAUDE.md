@@ -32,5 +32,10 @@ When choosing between approaches, prioritize:
 - Run all relevant tests using the Bash subagent only
 - Commit message explains why, not what
 
+## Rules
+- See @claude/rules/testing.md for testing standards
+- See @claude/rules/database.md for database access patterns
+- See @claude/rules/python.md for Python standards (applies to `*.py` files only)
+
 ## Tools
 - Use the Context7 MCP server to fetch current library docs before using unfamiliar APIs
