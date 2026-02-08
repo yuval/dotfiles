@@ -48,6 +48,11 @@ link "claude/rules/python.md" "$HOME/.claude/rules/python.md"
 link "claude/rules/testing.md" "$HOME/.claude/rules/testing.md"
 link "claude/rules/database.md" "$HOME/.claude/rules/database.md"
 
+# Codex (individual files only - preserve session data)
+mkdir -p "$HOME/.codex/rules"
+link "codex/AGENTS.md" "$HOME/.codex/AGENTS.md"
+link "codex/rules/safety.rules" "$HOME/.codex/rules/safety.rules"
+
 # VSCode (individual files)
 VSCODE_USER="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSCODE_USER"

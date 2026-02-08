@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repo Is
 
-Personal dotfiles repository for macOS. Manages configuration for: zsh, Ghostty terminal, Claude Code, VS Code, Emacs, and iTerm2.
+Personal dotfiles repository for macOS. Manages configuration for: zsh, Ghostty terminal, Claude Code, OpenAI Codex CLI, VS Code, Emacs, and iTerm2.
 
 ## Installation
 
@@ -29,6 +29,8 @@ iTerm2 is not symlinked — it syncs via its own preferences mechanism. The plis
 | `claude/agents/shipit.md` | `~/.claude/agents/shipit.md` |
 | `claude/skills/profile-python/SKILL.md` | `~/.claude/skills/profile-python/SKILL.md` |
 | `claude/rules/*.md` | `~/.claude/rules/*.md` |
+| `codex/AGENTS.md` | `~/.codex/AGENTS.md` |
+| `codex/rules/safety.rules` | `~/.codex/rules/safety.rules` |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `vscode/keybindings.json` | `~/Library/Application Support/Code/User/keybindings.json` |
 
