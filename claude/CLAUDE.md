@@ -35,12 +35,12 @@ When choosing between approaches, prioritize:
 - Imports at top of file; local imports only to break circular deps or for optional/heavy modules
 
 ## Error Handling
-- Never catch broad exceptions (Exception, BaseException) unless re-raising. Catch the specific exception type.
-- Always use `raise ... from e` to preserve the exception chain. Never bare `raise` or `raise NewError("msg")` without `from`.
-- Before adding try/except, trace the full call chain: what raises, what catches, and where it surfaces. If an exception will already propagate to a reasonable handler, don't catch it.
-- Never silently swallow exceptions. No bare `except: pass`, no `except Exception: log.warning(...)` without re-raising.
-- Error messages must include the specific context that failed: the input, the ID, the filename. "Failed to process record" is banned;
-- When writing a function that calls external services or I/O, explicitly consider: what happens if this times out, returns None, or raises? Don't leave the sad path to chance.
+- Before adding `try/except`, trace the call chain. If it surfaces cleanly at a boundary, don't catch mid-stack.
+- Catch specific exceptions in core logic. Broad `Exception` only at true boundaries (API handler, job runner) for response/retry/fail decisions.
+- Bare `raise` to re-raise; `raise DomainError(...) from e` only when translating to a meaningful domain error. Avoid multi-layer wrapping.
+- Never swallow exceptions. No `except: pass`, no "log and continue" without an explicit documented fallback.
+- Error messages must include actionable debugging context. Generic messages are banned.
+- Log once at the boundary with full context and correlation IDs (for Datadog). Inner layers raise enriched exceptions instead of logging.
 
 ## Testing
 - Test behavior, not implementation

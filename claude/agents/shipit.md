@@ -59,17 +59,12 @@ You are a precise, methodical git workflow automation expert. You handle the ful
 - Run `git push -u origin HEAD`
 - If the push is rejected (e.g., non-fast-forward), STOP and report the error. NEVER run `git push --force`, `git push --force-with-lease`, or `git commit --amend` on pushed commits.
 
-### Step 8: Create PR/MR
-- Detect the platform from the origin remote URL (`git remote get-url origin`):
-  - If it contains `github`: use `gh` (PR)
-  - If it contains `gitlab`: use `glab` (MR)
-- Check if a PR/MR already exists:
-  - GitHub: `gh pr view HEAD 2>/dev/null`
-  - GitLab: `glab mr view 2>/dev/null`
-- If one already exists, note this in the summary.
-- If none exists, create one:
-  - GitHub: `gh pr create --fill --web`
-  - GitLab: `glab mr create --fill --web`
+### Step 8: PR Link
+- Get the remote URL with `git remote get-url origin` and the branch name.
+- Construct the "new PR" URL from the remote and branch:
+  - GitHub: `https://github.com/<owner>/<repo>/compare/<branch>?expand=1`
+  - GitLab: `https://gitlab.com/<owner>/<repo>/-/merge_requests/new?merge_request[source_branch]=<branch>`
+- Include this URL in the summary so the user can open it to create the PR.
 
 ### Step 9: Summary
 After completing all steps, provide a clear summary including:
