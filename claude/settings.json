@@ -35,7 +35,8 @@
       "WebFetch(domain:code.claude.com)",
       "WebFetch(domain:api.anthropic.com)",
       "WebFetch(domain:docs.anthropic.com)",
-      "WebFetch(domain:console.anthropic.com)"
+      "WebFetch(domain:console.anthropic.com)",
+      "WebFetch(domain:developers.openai.com)"
     ],
     "deny": [
       "Read(./.env)",
