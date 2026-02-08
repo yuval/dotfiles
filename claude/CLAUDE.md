@@ -17,7 +17,6 @@ When choosing between approaches, prioritize:
 4. Consistency with project patterns
 
 ## Workflow
-- If unsure between approaches, propose 2 options and ask me to pick
 - Clean up any temporary files or scripts created during iteration
 
 ## Guardrails
@@ -27,7 +26,6 @@ When choosing between approaches, prioritize:
 
 ## Python Standards
 - Target Python 3.13+
-- Follow PEP8 strictly
 - Use f-strings for all string formatting (consistency across codebase; .format() and % are banned)
 - Prefer built-in types (dict, list, tuple) over typing imports
 - Public interfaces require type hints; internals optional when obvious
@@ -46,13 +44,10 @@ When choosing between approaches, prioritize:
 - Test behavior, not implementation
 - One assertion per test - each test verifies one behavior, not multiple outcomes. Keep tests short and sweet
 - Keep mocking simple; if test setup is complex, refactor the code instead
-- Descriptive names: `test_handles_empty_input_gracefully`
-- Tests must be deterministic
 - Write the fewest tests needed to cover core logic
 
 ## Documentation
 - Comment only: non-obvious things, business rules, why-not-what decisions, workarounds with issue numbers
-- Keep comments concise. Update when modifying code; remove if outdated.
 
 ## Before Every Commit
 - No commented-out code or dead code (unused imports, functions, variables)
