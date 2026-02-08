@@ -10,6 +10,7 @@
       "Bash(echo *)",
       "Bash(env)",
       "Bash(cat *)",
+      "Bash(psql *)",
       "Bash(git *)",
       "Bash(npm *)",
       "Bash(npx *)",
