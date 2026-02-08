@@ -20,7 +20,7 @@ When choosing between approaches, prioritize:
 - Clean up any temporary files or scripts created during iteration
 
 ## Guardrails
-- Never perform destructive operations (force push, rm -rf, DROP/DELETE/TRUNCATE, DB writes) without explicit approval 
+- Never perform destructive operations (force push, rm, rm -rf, DROP/DELETE/TRUNCATE, DB writes) without explicit approval
 - Never modify CI/CD configs, deployment scripts, or env files without asking
 - No dependency version changes without confirming with me. If the repo already uses the dependency, reuse the existing version.
 

@@ -15,7 +15,10 @@
       "Bash(env)",
       "Bash(cat *)",
       "Bash(psql *)",
+      "Bash(mkdir *)",
+      "Bash(chmod *)",
       "Bash(git *)",
+      "Bash(gh *)",
       "Bash(npm *)",
       "Bash(npx *)",
       "Bash(python *)",
@@ -37,8 +40,13 @@
     "deny": [
       "Read(./.env)",
       "Read(./.env.*)",
-      "Bash(rm -rf *)",
-      "Bash(sudo rm *)"
+      "Bash(rm *)",
+      "Bash(sudo *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard *)",
+      "Bash(git checkout -- .)",
+      "Bash(git clean *)"
     ]
   },
   "attribution": {
