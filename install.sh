@@ -43,6 +43,7 @@ link "claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 link "claude/settings.json" "$HOME/.claude/settings.json"
 link "claude/statusline.sh" "$HOME/.claude/statusline.sh"
 link "claude/agents/shipit.md" "$HOME/.claude/agents/shipit.md"
+link "claude/skills/profile-python/SKILL.md" "$HOME/.claude/skills/profile-python/SKILL.md"
 
 # VSCode (individual files)
 VSCODE_USER="$HOME/Library/Application Support/Code/User"
