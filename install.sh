@@ -44,6 +44,7 @@ link "claude/settings.json" "$HOME/.claude/settings.json"
 link "claude/statusline.sh" "$HOME/.claude/statusline.sh"
 link "claude/agents/shipit.md" "$HOME/.claude/agents/shipit.md"
 link "claude/skills/profile-python/SKILL.md" "$HOME/.claude/skills/profile-python/SKILL.md"
+link "claude/rules" "$HOME/.claude/rules"
 
 # VSCode (individual files)
 VSCODE_USER="$HOME/Library/Application Support/Code/User"
@@ -59,6 +60,9 @@ if [[ -d "$HOME/.emacs.d/.git" ]]; then
 else
     link "emacs.d" "$HOME/.emacs.d"
 fi
+
+# Git hooks
+link "hooks/post-commit" "$DOTFILES_DIR/.git/hooks/post-commit"
 
 echo ""
 echo "Done!"

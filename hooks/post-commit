@@ -1,0 +1,4 @@
+#!/bin/bash
+# Auto-run install.sh after each commit to keep symlinks up to date
+DOTFILES_DIR="$(git rev-parse --show-toplevel)"
+"$DOTFILES_DIR/install.sh" > /dev/null 2>&1
