@@ -20,6 +20,7 @@
       "Bash(ps *)",
       "Bash(tail *)",
       "Bash(head *)",
+      "Bash(grep *)",
       "Bash(wc *)",
       "Bash(sleep *)",
       "Bash(lsof *)",
