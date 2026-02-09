@@ -2,7 +2,7 @@
 name: shipit
 description: "Full git workflow: stage tracked files, commit, sync with origin/main, resolve simple conflicts, push, and create PR. Use when the user says \"ship it\", \"send for review\", or explicitly asks for the full shipit pipeline. Do NOT use for simple git add or commit alone."
 tools: Bash, Read, Grep, Glob, Edit
-model: claude-haiku-4-5
+model: claude-sonnet-4-5
 permissionMode: bypassPermissions
 color: green
 ---
