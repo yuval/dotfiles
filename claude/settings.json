@@ -21,6 +21,7 @@
       "Bash(tail *)",
       "Bash(head *)",
       "Bash(grep *)",
+      "Bash(awk *)",
       "Bash(wc *)",
       "Bash(sleep *)",
       "Bash(lsof *)",
