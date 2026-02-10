@@ -5,6 +5,8 @@ description: >
   especially pipelines with concurrent LLM or API calls.
   Pinpoints the exact functions responsible for latency, tail spikes, and memory jumps,
   then produces a prioritized report of fixes.
+user-invocable: true
+allowed-tools: Bash(sudo py-spy *)
 ---
 
 # Python Profiling (Async + LLM/API heavy)
