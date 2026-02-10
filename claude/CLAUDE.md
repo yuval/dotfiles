@@ -37,5 +37,3 @@ When choosing between approaches, prioritize:
 - See @claude/rules/database.md for database access patterns
 - See @claude/rules/python.md for Python standards (applies to `*.py` files only)
 
-## Tools
-- Use the Context7 MCP server to fetch current library docs before using unfamiliar APIs
