@@ -25,6 +25,7 @@
       "Bash(head *)",
       "Bash(grep *)",
       "Bash(awk *)",
+      "Bash(sed *)",
       "Bash(find *)",
       "Bash(wc *)",
       "Bash(sleep *)",
@@ -73,7 +74,6 @@
   "enabledPlugins": {
     "pyright-lsp@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": true,
-
     "code-review@claude-plugins-official": true
   },
   "teammateMode": "in-process"
