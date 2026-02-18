@@ -101,6 +101,7 @@
 (require 'init-javascript)
 (require 'init-php)
 (require 'init-org)
+(require 'init-org-roam)
 (require 'init-nxml)
 (require 'init-html)
 (require 'init-css)
