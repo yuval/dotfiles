@@ -28,6 +28,7 @@ iTerm2 is not symlinked — it syncs via its own preferences mechanism. The plis
 | `claude/statusline.sh` | `~/.claude/statusline.sh` |
 | `claude/agents/shipit.md` | `~/.claude/agents/shipit.md` |
 | `claude/skills/profile-python/SKILL.md` | `~/.claude/skills/profile-python/SKILL.md` |
+| `claude/skills/fetch-docs/SKILL.md` | `~/.claude/skills/fetch-docs/SKILL.md` |
 | `claude/rules/*.md` | `~/.claude/rules/*.md` |
 | `codex/AGENTS.md` | `~/.codex/AGENTS.md` |
 | `codex/rules/safety.rules` | `~/.codex/rules/safety.rules` |
