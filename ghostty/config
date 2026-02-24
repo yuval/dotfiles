@@ -37,3 +37,4 @@ keybind = cmd+right=text:\x1bf
 
 # Line editing - send to shell
 keybind = cmd+backspace=text:\x15
+keybind = shift+enter=text:\n
