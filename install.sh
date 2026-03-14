@@ -37,6 +37,9 @@ link "p10k.zsh" "$HOME/.p10k.zsh"
 # Ghostty
 link "ghostty" "$HOME/.config/ghostty"
 
+# Neovim
+link "nvim" "$HOME/.config/nvim"
+
 # Claude (individual files only - preserve session data)
 mkdir -p "$HOME/.claude"
 link "claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"

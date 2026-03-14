@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repo Is
 
-Personal dotfiles repository for macOS. Manages configuration for: zsh, Ghostty terminal, Claude Code, OpenAI Codex CLI, VS Code, Emacs, and iTerm2.
+Personal dotfiles repository for macOS. Manages configuration for: zsh, Ghostty terminal, Neovim, Claude Code, OpenAI Codex CLI, VS Code, Emacs, and iTerm2.
 
 ## Installation
 
@@ -23,6 +23,7 @@ iTerm2 is not symlinked — it syncs via its own preferences mechanism. The plis
 | `zshrc` | `~/.zshrc` |
 | `p10k.zsh` | `~/.p10k.zsh` |
 | `ghostty/` | `~/.config/ghostty` |
+| `nvim/` | `~/.config/nvim` |
 | `claude/CLAUDE.md` | `~/.claude/CLAUDE.md` |
 | `claude/settings.json` | `~/.claude/settings.json` |
 | `claude/statusline.sh` | `~/.claude/statusline.sh` |
@@ -40,6 +41,7 @@ iTerm2 is not symlinked — it syncs via its own preferences mechanism. The plis
 - **`claude/CLAUDE.md`** is the global Claude Code instructions file (applies to all projects via `~/.claude/CLAUDE.md`). This repo's `CLAUDE.md` (this file) is repo-specific. Domain-specific rules live in `claude/rules/` (see @claude/rules for details).
 - **`claude/agents/shipit.md`** is a custom Claude Code agent for the full git commit/push/PR workflow. It uses `git add -u` only (never `git add .`), never force-pushes, and stops on conflicts.
 - Config files are the source of truth — edit them here, then run `install.sh` or rely on existing symlinks.
+- **`nvim/`** is the Neovim configuration (used with Neovide GUI). Uses lazy.nvim for plugin management, Tokyo Night theme, LSP via Mason, Telescope, nvim-tree, and Treesitter. Leader key is Space.
 - **`ghostty/config`** is the Ghostty terminal configuration. It defines keybindings for macOS-style copy/paste, tab/split-pane management, font size, scrolling, and word/line navigation (Option+arrows and Cmd+arrows send escape sequences to the shell).
 - The Emacs config (`emacs.d/`) is a modular setup with `init.el` loading individual `lisp/init-*.el` feature files. It may have its own git history at `~/.emacs.d`.
 
