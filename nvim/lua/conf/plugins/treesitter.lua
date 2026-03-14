@@ -3,37 +3,13 @@ return {
   build = ":TSUpdate",
 
   config = function()
-    require("nvim-treesitter.configs").setup({
-        ensure_installed = {
-          "c",
-          "cpp",
-          "python",
-          "html",
-          "css",
-          "matlab",
-          "javascript",
-          "lua",
-          "vim",
-          "vimdoc",
-          "query"
-        },
+    require("nvim-treesitter").setup({})
 
-        sync_install = false,
-        auto_install = true,
-
-        autopairs = {
-          enable = true,
-        },
-        
-        highlight = {
-          enable = true,
-          additional_vim_regex_highlighting = false,
-        },
-
-        indent = {
-          enable = true,
-          --disable = { "python", "c" } -- these and some other langs don't work well
-        },
-      })
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = "*",
+      callback = function()
+        pcall(vim.treesitter.start)
+      end,
+    })
   end
 }
