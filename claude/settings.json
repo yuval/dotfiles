@@ -1,10 +1,7 @@
 {
-  "additionalDirectories": [
-    "~/workspaces",
-    "~/Downloads"
-  ],
   "env": {
-    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_CODE_NO_FLICKER": "1"
   },
   "attribution": {
     "commit": "",
@@ -52,5 +49,9 @@
     "frontend-design@claude-plugins-official": true,
     "code-review@claude-plugins-official": true
   },
+  "additionalDirectories": [
+    "~/workspaces",
+    "~/Downloads"
+  ],
   "teammateMode": "in-process"
 }
