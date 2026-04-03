@@ -16,6 +16,13 @@ When choosing between approaches, prioritize:
 3. Readability (will someone understand in 6 months?)
 4. Consistency with project patterns
 
+## Engineering Principles
+1. **If you don't need it, don't build it.** Every feature that doesn't exist can't break, can't confuse users, and can't become maintenance burden. The bar should be "I need this right now," not "someone might want this someday."
+2. **Prefer simple, composable primitives over specialized abstractions.** Instead of bespoke systems, compose existing tools. A pipeline of simple, well-understood primitives almost always beats a monolithic "smart" one.
+3. **Make everything observable.** If you can't see what's happening, you can't debug it, trust it, or improve it. Design for full inspectability from day one rather than bolting it on later.
+4. **Own your abstractions, but keep them thin.** When third-party libraries cost you more time than writing your own thin layer, write your own. But cover your actual use cases and stop — resist the urge to make it "complete."
+5. **Make state explicit and external, not hidden and internal.** If something matters, it should be a file you can read, edit, version, and share — not ephemeral state trapped inside a running process. If you can cat it, you can debug it.
+
 ## Workflow
 - Clean up any temporary files or scripts created during iteration
 
