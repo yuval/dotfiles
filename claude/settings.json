@@ -38,7 +38,8 @@
       "Bash(git reset --hard *)",
       "Bash(git checkout -- .)",
       "Bash(git clean *)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "statusLine": {
     "type": "command",
@@ -53,5 +54,6 @@
     "~/workspaces",
     "~/Downloads"
   ],
-  "teammateMode": "in-process"
+  "teammateMode": "in-process",
+  "skipAutoPermissionPrompt": true
 }
