@@ -56,6 +56,12 @@ mkdir -p "$HOME/.codex/rules"
 link "claude/CLAUDE.md" "$HOME/.codex/AGENTS.md"
 link "codex/rules/safety.rules" "$HOME/.codex/rules/safety.rules"
 
+# Pi (individual files only - preserve session data)
+link "claude/CLAUDE.md" "$HOME/.pi/agent/AGENTS.md"
+link "claude/skills/profile-python/SKILL.md" "$HOME/.pi/agent/skills/profile-python/SKILL.md"
+
+# Muse needs no links: it falls back to ~/.claude/CLAUDE.md for personal rules
+
 # VSCode (individual files)
 VSCODE_USER="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSCODE_USER"
