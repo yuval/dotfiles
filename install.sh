@@ -45,18 +45,15 @@ mkdir -p "$HOME/.claude"
 link "claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 link "claude/settings.json" "$HOME/.claude/settings.json"
 link "claude/statusline.sh" "$HOME/.claude/statusline.sh"
-link "claude/agents/shipit.md" "$HOME/.claude/agents/shipit.md"
 link "claude/skills/profile-python/SKILL.md" "$HOME/.claude/skills/profile-python/SKILL.md"
-link "claude/skills/fetch-docs/SKILL.md" "$HOME/.claude/skills/fetch-docs/SKILL.md"
-link "skills/to-prd/SKILL.md" "$HOME/.claude/skills/to-prd/SKILL.md"
-link "skills/grill-me/SKILL.md" "$HOME/.claude/skills/grill-me/SKILL.md"
 link "claude/rules/python.md" "$HOME/.claude/rules/python.md"
 link "claude/rules/testing.md" "$HOME/.claude/rules/testing.md"
 link "claude/rules/database.md" "$HOME/.claude/rules/database.md"
 
 # Codex (individual files only - preserve session data)
 mkdir -p "$HOME/.codex/rules"
-link "codex/AGENTS.md" "$HOME/.codex/AGENTS.md"
+# Shares the global instructions with Claude
+link "claude/CLAUDE.md" "$HOME/.codex/AGENTS.md"
 link "codex/rules/safety.rules" "$HOME/.codex/rules/safety.rules"
 
 # VSCode (individual files)
@@ -64,15 +61,6 @@ VSCODE_USER="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSCODE_USER"
 link "vscode/settings.json" "$VSCODE_USER/settings.json"
 link "vscode/keybindings.json" "$VSCODE_USER/keybindings.json"
-
-# Emacs - copy instead of symlink (has its own git repo)
-if [[ -d "$HOME/.emacs.d/.git" ]]; then
-    echo ""
-    echo "Note: ~/.emacs.d has its own git repo."
-    echo "To sync: cp -r $DOTFILES_DIR/emacs.d/* ~/.emacs.d/"
-else
-    link "emacs.d" "$HOME/.emacs.d"
-fi
 
 # Git hooks
 link "hooks/post-commit" "$DOTFILES_DIR/.git/hooks/post-commit"

@@ -20,7 +20,8 @@ elif [ "$PCT" -ge 70 ]; then CTX_COLOR="$YELLOW"
 else CTX_COLOR="$GREEN"; fi
 
 # Git info with caching (5s TTL)
-CACHE_FILE="/tmp/claude-statusline-git-cache"
+# Keyed by directory so concurrent sessions in different repos don't show each other's branch
+CACHE_FILE="/tmp/claude-statusline-git-cache${DIR//\//_}"
 CACHE_MAX_AGE=5
 
 cache_is_stale() {

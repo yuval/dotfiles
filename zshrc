@@ -18,18 +18,6 @@ export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 # Powerlevel10k config
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-
-# Google Cloud SDK
-if [ -f '$HOME/Downloads/google-cloud-sdk/path.zsh.inc' ]; then
-  . '$HOME/Downloads/google-cloud-sdk/path.zsh.inc'
-fi
-if [ -f '$HOME/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then
-  . '$HOME/Downloads/google-cloud-sdk/completion.zsh.inc'
-fi
-
 # AWS
 export AWS_PROFILE=staging-power
 export PGSSLROOTCERT="${HOME}/.local/share/aws/ca-certificates/amazon-rds-us-east-1-root-ca-rsa2048-g1.pem"
@@ -43,13 +31,9 @@ bindkey "^W" backward-kill-word    # Ctrl+W = delete word backward
 
 # Aliases
 alias grep='ggrep'
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:$HOME/.cache/lm-studio/bin"
 # End of LM Studio CLI section
 
 export PYTHONDONTWRITEBYTECODE=1
-
-# Added by Antigravity CLI installer
-export PATH="$HOME/.local/bin:$PATH"
