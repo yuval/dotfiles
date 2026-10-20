@@ -14,10 +14,7 @@
     },
     "github.copilot.editor.enableAutoCompletions": true,
     "github.copilot.nextEditSuggestions.enabled": true,
-    "workbench.colorTheme": "Dark+",
     "docker.extension.enableComposeLanguageServer": false,
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
         "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -38,5 +35,20 @@
     "chat.disableAIFeatures": true,
     "workbench.editor.autoLockGroups": {
         "mainThreadWebview-markdown.preview": true
-    }
+    },
+    "files.exclude": {
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/.venv": true,
+        "**/*.egg-info": true,
+        "**/__pycache__": true,
+        "**/*.pyc": true
+    },
+    "claudeCode.hideOnboarding": true,
+    "workbench.sideBar.location": "right",
+    "window.commandCenter": true,
+    "git.blame.statusBarItem.enabled": true,
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Winter is Coming (Dark Blue)"
 }
