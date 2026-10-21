@@ -42,10 +42,10 @@ link "nvim" "$HOME/.config/nvim"
 
 # Claude (individual files only - preserve session data)
 mkdir -p "$HOME/.claude"
-link "claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
+link "agents/AGENTS.md" "$HOME/.claude/CLAUDE.md"
 link "claude/settings.json" "$HOME/.claude/settings.json"
 link "claude/statusline.sh" "$HOME/.claude/statusline.sh"
-link "claude/skills/profile-python/SKILL.md" "$HOME/.claude/skills/profile-python/SKILL.md"
+link "agents/skills/profile-python/SKILL.md" "$HOME/.claude/skills/profile-python/SKILL.md"
 link "claude/rules/python.md" "$HOME/.claude/rules/python.md"
 link "claude/rules/testing.md" "$HOME/.claude/rules/testing.md"
 link "claude/rules/database.md" "$HOME/.claude/rules/database.md"
@@ -53,12 +53,12 @@ link "claude/rules/database.md" "$HOME/.claude/rules/database.md"
 # Codex (individual files only - preserve session data)
 mkdir -p "$HOME/.codex/rules"
 # Shares the global instructions with Claude
-link "claude/CLAUDE.md" "$HOME/.codex/AGENTS.md"
+link "agents/AGENTS.md" "$HOME/.codex/AGENTS.md"
 link "codex/rules/safety.rules" "$HOME/.codex/rules/safety.rules"
 
 # Pi (individual files only - preserve session data)
-link "claude/CLAUDE.md" "$HOME/.pi/agent/AGENTS.md"
-link "claude/skills/profile-python/SKILL.md" "$HOME/.pi/agent/skills/profile-python/SKILL.md"
+link "agents/AGENTS.md" "$HOME/.pi/agent/AGENTS.md"
+link "agents/skills/profile-python/SKILL.md" "$HOME/.pi/agent/skills/profile-python/SKILL.md"
 
 # Muse needs no links: it falls back to ~/.claude/CLAUDE.md for personal rules
 
