@@ -21,7 +21,7 @@ else CTX_COLOR="$GREEN"; fi
 
 # Git info with caching (5s TTL)
 # Keyed by directory so concurrent sessions in different repos don't show each other's branch
-CACHE_FILE="/tmp/claude-statusline-git-cache${DIR//\//_}"
+CACHE_FILE="/tmp/claude-statusline-git-cache-$(md5 -q -s "$DIR")"
 CACHE_MAX_AGE=5
 
 cache_is_stale() {
